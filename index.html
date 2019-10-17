@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="bs/css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="col-6 offset-3 img-holder">
+        <div class="img"></div>
+    </div>
+
+    <div class="col-4 offset-4">
+        <h1 class="header">GAME</h1>
+        <div id="output1"></div>
+        <button class="btn btn-info mybtn" id="shuffle">Shuffle</button>
+        <input type="text" class="form-control mt-5" id="myinput" placeholder="Enter your guess">
+        <button class="btn btn-info mybtn" id="guess">Guess</button>
+        <div id="output2"></div>
+        <button class="btn btn-info mybtn" id="help">Help</button>
+        <button class="btn btn-info w-100 mt-2 b" id="new_country">New country</button>
+        <div id="score">60</div>
+
+    </div>
+    <script src="handlebars.js"></script>
+
+    <script type="text/handelbars" id="guessingCountry-template">
+        <span> {{name}}
+            </span>
+
+    </script>
+    <script src="app.js"></script>
+</body>
+
+</html>
